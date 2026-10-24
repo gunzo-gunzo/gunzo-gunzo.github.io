@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Source Code Pro", sans-serif;
+	color: #adadad;
+}
+
+body, html {
+  background: url("C:\\Users\\lmkzk\\OneDrive\\Pictures\\Roblox\\ascii-words-sunrise-insurance-co-dusk.png")
+    no-repeat center center / cover fixed #333333;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.heading {
+	place-self: center;
+	grid-column: 1 / span 3;
+	grid-row: 1;
+	text-align: center;
+	text-shadow: 0px 0px 5px #6d5b41;
+}
+
+.heading__image {
+	max-width: 40%;
+	filter: drop-shadow(0px 0px 60px #6d5b41);
+}
+
+.heading__title {
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+.heading__subtitle {
+	font-weight: 400;
+}
+
+canvas {
+	grid-column: 2;
+	grid-row: 2;
+	border: 4px solid #6d5b41;
+}
+
+.note {
+	grid-column: 1;
+	grid-row: 2;
+	line-height: 25px;
+	padding-inline: 2rem;
+}
+
+.settings {
+	grid-column: 3;
+	grid-row: 2;
+	padding-inline: 2rem;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.setting__button {
+	padding-inline: 0.5rem;
+	padding-block: 0.25rem;
+	background-color: transparent;
+	border: 1px solid #6d5b41;
+	cursor: pointer;
+}
+
+.setting > .setting__button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.setting:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.setting__button:hover {
+	background-color: #6d5b41;
+	color: black;
+}
+
+.setting__text-input {
+	margin-inline: 0.5rem;
+	width: 100%;
+	background-color: transparent;
+	border-style: unset;
+	border-bottom: 1px solid #6d5b41;
+}
+
+.setting__text-input:focus {
+	outline: none;
+}
