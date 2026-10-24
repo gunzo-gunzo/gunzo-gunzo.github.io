@@ -6,9 +6,10 @@
 	color: #adadad;
 }
 
-body {
-	background-image: url("/images/ascii-words-sunrise-insurance-co-dusk.png");
-	no-repeat center center / cover fixed #05080A;
+body, html {
+	min-height: 100%;
+	height: 100%;
+	background-color: #05080A;
 }
 
 body {
